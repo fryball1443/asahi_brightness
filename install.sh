@@ -1,12 +1,20 @@
 #!/bin/bash
-
+echo "git log:"
 git pull
+echo ""
 
 if [ ! -d ~/bin ]; then
   mkdir ~/bin
+  echo "created ~/bin folder"
 fi
 
-cat ./change_brightness.sh >> ~/bin/change_brightness.sh
+#cat ./change_brightness.sh >> ~/bin/change_brightness.sh
+if cmp -s ./change_brightness.sh ~/bin/change_brightness.sh; then
+  echo "change_brightness.sh is already up to date."
+else
+  cat ./change_brightness.sh > ~/bin/change_brightness.sh
+  echo "updated change_brightness.sh."
+fi
 
 if [ -f ~/.zshrc ]; then
   if ! grep -q "alias chbr='sudo bash ~/bin/change_brightness.sh'" ~/.zshrc; then

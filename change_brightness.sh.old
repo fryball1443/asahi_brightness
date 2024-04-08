@@ -1,4 +1,8 @@
 #!/bin/bash
+# 
+# This version is old.
+# This only allows you to adjust the screen brightness, not keyboard.
+# 
 
 # Check if argument is provided
 if [ -z "$1" ]
