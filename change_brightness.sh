@@ -7,19 +7,6 @@ then
     exit 1
 fi
 
-
-# if [ -z "$1" ]
-# then
-#     echo ' -------------------------------------------------------------------- '
-#     echo '|  No argument supplied.                                             |'
-#     echo '|  Please add an argument in % out of 100.                           |'
-#     echo '|  Example: chbr 30 would be that you want to set brightness to 30%. |'
-#     echo '|  The system will use that % to calculate the nit value and change  |'
-#     echo '|  brightness according to those nits.                               |'
-#     echo ' -------------------------------------------------------------------- '
-#     exit 1
-# fi
-
 # file locations
 backlight_file=/sys/class/backlight/apple-panel-bl/brightness
 max_backlight_file=/sys/class/backlight/apple-panel-bl/max_brightness
