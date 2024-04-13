@@ -1,0 +1,26 @@
+Version 1.1
+
+changelog:
+- reorganized file structure and added default settings that are customizable when running the install.sh
+
+Added:
+- New flags -d, --help, and -h to the chbr script.
+- -d flag in chbr script sets the brightness to the default values.
+- --help and -h flags in chbr script display the help page.
+- New file locations default_backlight_file, default_keybacklight_file, and help_file in chbr script.
+- Checks for arguments in each case of the switch statement in chbr script.
+- Variables for file paths to improve readability and maintainability.
+- Commands to change permissions of several files to make them readable and writable.
+- Checks and commands to create new directories if they do not exist.
+- User prompts to enter desired default brightness for screen and keyboard.
+- Conditions to handle user input for default brightness settings.
+
+Changed:
+- Moved the check for arguments from the start of the script to each case in the switch statement in chbr script.
+- Updated the error messages in chbr script to include a suggestion to type chbr --help for more info.
+- Updated the comparison and copying of `change_brightness.sh` to use the new file path.
+- Updated the final echo statements to indicate the completion of installation and provide a help command.
+
+Removed:
+- The initial check for arguments at the start of the chbr script.
+- `sudo` from the alias command in `.zshrc` and `.bashrc` files.
