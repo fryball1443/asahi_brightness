@@ -40,22 +40,22 @@ Removed:
 - `sudo` from the alias command in `.zshrc` and `.bashrc` files.
 
 ## Instructions
-download full contents to (or git clone to) user_home folder (~/)
+git clone to user_home folder (~/)
 
-to install, type cd ./install.sh
+to install, type cd ~user//install.sh
 
 to use:
 - run installation script
 - command to change brightness: chbr
 
-Syntax:
-Usage: chbr [OPTION]... [PERCENTAGE]...
-Note: -s and -k and be used together
- Options:
-  -s [percentage]  set the screen brightness to the specified percentage
-  -k [percentage]  set the keyboard brightness to the specified percentage
-  -d               set keyboard and screen to their default values
-  -h, --help       display this help message and exit
+### Syntax:
+Usage: chbr [OPTION]... [PERCENTAGE]...  
+Note: -s and -k and be used together  
+ Options:  
+	-s [percentage]  set the screen brightness to the specified percentage  
+ -k [percentage]  set the keyboard brightness to the specified percentage  
+ -d               set keyboard and screen to their default values  
+ -h, --help       display this help message and exit  
 
 Examples:
   chbr -s 30       change screen brightness to 30%
