@@ -57,8 +57,8 @@ Note: -s and -k and be used together
  -d               set keyboard and screen to their default values  
  -h, --help       display this help message and exit  
 
-Examples:
-  chbr -s 30       change screen brightness to 30%
-  chbr -k 30       change keyboard brightness to 30%
-  chbr -d          change brightness to default values
-  chbr -sk 23      change both the keyboard and screen brightness to 23%
+Examples:  
+  chbr -s 30       change screen brightness to 30%  
+  chbr -k 30       change keyboard brightness to 30%  
+  chbr -d          change brightness to default values  
+  chbr -sk 23      change both the keyboard and screen brightness to 23%  
